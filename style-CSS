@@ -1,0 +1,275 @@
+@@ -0,0 +1,216 @@
+body {
+    background-color: #dedede;
+}
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+img {
+    width: 100%;
+}
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+div {
+    display: inline-block;
+    width: 24%;
+    margin: 5px;
+    padding: 2px;
+}
+/* First media query for medium screens */
+@media (min-width: 600px) {
+    body {
+        background-color: #b0c4de;
+    }
+    div {
+        width: 48%;
+    }
+    div img {
+        width: 200px;
+        height: 200px;
+    }
+}
+/* Second media query for large screens */
+@media (min-width: 900px) {
+    body {
+        background-color: #87cefa;
+    }
+    div {
+        width: 32%;
+    }
+    div img {
+        width: 250px;
+        height: 250px;
+    }
+}
+/* 
+body {
+    background-color: #dedede;
+}
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 32px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    font-family:Arial, sans-serif;
+}
+p {
+   font-size: 25px;
+   font-family:Arial, sans-serif;
+}
+img{
+  width:100%;
+}
+p{
+  text-align:center;
+}
+div img{
+    width:150px;
+    height: 150px;
+    display:block;
+    margin:auto;
+}
+div{
+  display: inline-block;
+  width: 24%;
+  margin: 5px;
+  padding: 2px;
+} */
+/* 
+main {
+    border: 5px #000 solid;
+    margin: 10px;
+}
+ */
+/* 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+ */
+/* img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+} */
+/* .child {
+    position: relative;
+    display: inline-block;
+    border: 5px black solid;
+    margin: 5px;
+    border-radius: 5px;
+} */
+/* 
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+} */
+/* 
+.button {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 25px;
+}
+ */
+/* 
+.button:hover {
+    background-color:#fff;
+} */
+/* 
+footer {
+    display: flex;
+    justify-content: center;
+} */
+/* 
+header {
+    border-radius: 5px;
+    border: 5px #000 solid;
+    margin: 10px;
+} */
+/* 
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+} */
+/* 
+.child:hover .label {
+    display: block;
+} */
+‎images/Blue.png
+2.74 KB
+
+
+
+‎images/Green.png
+144 Bytes
+
+
+
+‎images/Indigo.jpeg
+2.38 KB
+
+
+
+‎images/Orange.png
+144 Bytes
+
+
+
+‎images/Pink.jpeg
+6.49 KB
+
+
+
+‎images/Purple.png
+3.01 KB
+
+
+
+‎images/Red.jpeg
+2.36 MB
+
+
+
+‎images/White.png
+143 Bytes
+
+
+
+‎images/Yellow.png
+2.74 KB
+
+
+
+‎index.html
++71
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="top">Colors!</h1>
+  </header>
+  <main>
+    <h2>Basic Media Queries</h2>
+    <p>In this assignment you will add two media queries to the css file.</p>
+    <ul>
+      <li>The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.</li>
+      <li>The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.</li>
+    </ul>
+    <p>You will need to make additional changes to ensure that the divs appear next to each other and that the images are contained within the divs.  Some of these properties include display, width and max-height.</p>
+    <div>
+      <img src="images/Red.jpeg" alt="Red" width="200">
+      <p class = "label">Red</p>
+    </div>
+    <div>
+      <img src="images/Orange.png" alt="Orange" width="200">
+      <p class = "label">Orange</p>
+    </div>
+    <div>
+      <img src="images/Yellow.png" alt="Yellow" width="200">
+      <p class = "label">Yellow</p>
+    </div>
+    <div>
+      <img src="images/Green.png" alt="Green" width="200">
+      <p class = "label">Green</p>
+    </div>
+    <div>
+      <img src="images/Blue.png" alt="Blue" width="200">
+      <p class = "label">Blue</p>
+    </div>
+    <div>
+      <img src="images/Indigo.jpeg" alt="Indigo" width="200">
+      <p class = "label">Indigo</p>
+    </div>
+    <div>
+      <img src="images/Purple.png" alt="Purple" width="200">
+      <p class = "label">Purple</p>
+    </div>
+    <div>
+      <img src="images/Pink.jpeg" alt="Pink" width="200">
+      <p class = "label">Pink</p>
+    </div>
+    <div>
+      <img src="images/White.png" alt="White" width="200">
+      <p class = "label">White</p>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <a href="#top">Jump to the Top</a>
+  </footer>
+</body>
+</html>
